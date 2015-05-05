@@ -55,10 +55,19 @@ h2 img {
   margin-top: 25%;
   }
 
-  .button {
+.button {
     font-family: "DINProLight";
     color: #ccc;
     margin: 20px 20px;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2 ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #fff;
+
   }
 
   .quote {
@@ -67,28 +76,62 @@ h2 img {
     margin-left: auto;
     margin-right: auto; 
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
     font-family: "FarnhamDisplay-RegularItal";
     letter-spacing: .4em;
     text-transform: uppercase;
     font-size: .7em;
-    padding: 0 100px;
-    margin-bottom: 50px;
+    padding: 0 10px;
+    
+  }
 
-
-
+  .quote-source {
+    position: relative;
+    right: -100px;
   }
 
   footer {
     color: #ccc;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
     text-align: center;
     background-color: rgba(103, 162, 185, .5);
-    padding: 10px 0;
+    padding: 30px 0;
     font-family: "FarnhamDisplayLightSC";
     letter-spacing: .3em;
-    margin-top: 20px;
+    margin-top: 30px;
+    height: 50px;
+    vertical-align: middle;
+  }
+
+ img.fbshare {
+  margin-left: 20px;
+  position: relative; 
+  top: 15px;
+  
 
   }
+
+
+
+  /* Larger than mobile */
+@media (min-width: 410px) {
+  footer {
+    height: 20px;
+  }
+
+  img.fbshare {
+    top: 7px; 
+  }
+
+  .quote {
+    padding: 0 10px; 
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .quote {
+    padding: 0 100px; 
+  }
+
+}
+
