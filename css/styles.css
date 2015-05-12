@@ -70,7 +70,7 @@ h2 img {
 
   }
 
-  .quote {
+  .quote, blockquote {
     color: #ccc;
     display: block;
     margin-left: auto;
@@ -83,6 +83,15 @@ h2 img {
     font-size: .7em;
     padding: 0 10px;
     
+  }
+
+  blockquote {
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+    width: 50%;
+    padding: 30px 0;
+    line-height: 3em;
+    margin-top: 0;
   }
 
   .quote-source {
@@ -135,3 +144,30 @@ h2 img {
 
 }
 
+
+/* PRACTICE AREAS */
+
+html.practice { 
+  background: url(../images/bg-practice.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+
+
+h3 {
+  text-align: center;
+}
+
+.body-text {
+
+  text-align: justify;
+}
+
+.author {
+  margin-left: 80px;
+  font-size: 1.3em;
+}
