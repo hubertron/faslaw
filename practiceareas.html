@@ -36,13 +36,22 @@
 
       <nav>
         <a href="#" id="logo" ><img src="images/fas-nav.png" alt="Home" width="300"></a>
-        <ul>
-          <li><a href="#">Attorneys</a></li>
-          <li>|</li>
-          <li><a class="tooltips" href="#">Practice Areas<span>Tooltip</span></a></li>
-          <li>|</li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <div id="navcontainer">
+          <ul id="navlist">
+            <li id="active"><a href="#">Attorneys</a> </li>
+            <li>|</li>
+            <li><a href="#" id="current">Practice Areas</a>
+              <ul id="subnavlist">
+                <li id="subactive"><a href="#" id="subcurrent">Criminal Defense</a></li>
+                <li><a href="#">Employment Discrimination</a></li>
+                <li><a href="#">Civil Rights</a></li>
+                <li><a href="#">Post Conviction</a></li>
+              </ul>
+            </li>
+            <li>|</li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
 
     </header>

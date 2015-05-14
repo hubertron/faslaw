@@ -133,41 +133,75 @@ h2 img {
 
 
 /* TOOLTIPS */
-  a.tooltips {
-    position: relative;
-    display: inline;
-  }
-  a.tooltips span {
-    position: absolute;
-    width:140px;
-    color: #FFFFFF;
-    background: #000000;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    visibility: hidden;
-    border-radius: 6px;
-  }
-  a.tooltips span:after {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -8px;
-    width: 0; height: 0;
-    border-bottom: 8px solid #000000;
-    border-right: 8px solid transparent;
-    border-left: 8px solid transparent;
-  }
-  a:hover.tooltips span {
-    visibility: visible;
-    opacity: 0.8;
-    top: 30px;
-    left: 50%;
-    margin-left: -76px;
-    z-index: 999;
+  ul#navlist { }
+
+  ul#navlist a
+  {
+    text-decoration: none;
+    margin: 0 20pt;
   }
 
+  ul#navlist, ul#navlist ul, ul#navlist li
+  {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  ul#navlist li { float: left; }
+
+  ul#navlist li a
+  {
+    padding: 3px;
+  }
+
+  ul#navlist li a:after {
+    
+  }
+
+  ul#navlist li a:last:after {
+    content: '';
+  }
+
+  ul#navlist li a:hover
+  {
+    text-decoration: underline;
+    color: #EEE;
+  }
+
+  ul#navlist li a:active
+  {
+    color: #EEE;
+  }
+
+  ul#subnavlist { display: none; background-color: #15161f;  }
+  ul#subnavlist li { float: none;  }
+
+  ul#subnavlist li a
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  ul#navlist li:hover ul#subnavlist
+  {
+  display: block;
+  position: absolute;
+  font-size: 9pt;
+  padding-top: 5px;
+
+  }
+
+  ul#navlist li:hover ul#subnavlist li a
+  {
+  display: block;
+  width: 20em;
+  border: none;
+  padding: 2px;
+
+  }
+
+  ul#navlist li:hover ul#subnavlist li a:before {  }
 
 
 /* PRACTICE AREAS */
@@ -193,10 +227,11 @@ nav {
   position: relative;
   top: 18px;
   height: 30px;
-  margin: 0 20pt;
+  
 }
 #logo {
    float: left;
+   margin-left: 20pt;
 }
 
 .spacer {
