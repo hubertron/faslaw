@@ -133,75 +133,82 @@ h2 img {
 
 
 /* TOOLTIPS */
-  ul#navlist { }
+  ul#navlist { 
+    width: 100%;
 
-  ul#navlist a
-  {
-    text-decoration: none;
-    margin: 0 20pt;
   }
 
   ul#navlist, ul#navlist ul, ul#navlist li
-  {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-  }
+    {
+      margin: 0px;
+      padding-top: 4px; 
+      background-color: #15161f;
+      list-style-type: none;
+    }
 
-  ul#navlist li { float: left; }
+    ul#navlist li { float: left;   }
 
-  ul#navlist li a
-  {
-    padding: 3px;
-  }
+    ul#navlist li:first-child {
+      padding-left: 25px;
+    } 
 
-  ul#navlist li a:after {
-    
-  }
+    ul#navlist li a
+    {
+      padding: 3px;
+   
 
-  ul#navlist li a:last:after {
-    content: '';
-  }
+    }
 
-  ul#navlist li a:hover
-  {
-    text-decoration: underline;
-    color: #EEE;
-  }
+    ul#navlist li a:after {
+      
+    }
 
-  ul#navlist li a:active
-  {
-    color: #EEE;
-  }
+    ul#navlist li a:last:after {
+      
+    }
 
-  ul#subnavlist { display: none; background-color: #15161f;  }
-  ul#subnavlist li { float: none;  }
+    ul#navlist li a:hover
+    {
+      text-decoration: underline;
+      color: #EEE;
+    }
 
-  ul#subnavlist li a
-  {
-    padding: 0px;
-    margin: 0px;
-  }
+    ul#navlist li a:active
+    {
+      color: #EEE;
+    }
 
-  ul#navlist li:hover ul#subnavlist
-  {
-  display: block;
-  position: absolute;
-  font-size: 9pt;
-  padding-top: 5px;
+    ul#subnavlist { display: none; background-color: #15161f;  }
+    ul#subnavlist li { float: none;  }
 
-  }
+    ul#subnavlist li a
+    {
+      padding: 0px;
+      margin: 0px;
+      line-height: .1em;
+      text-decoration: none;
+    }
 
-  ul#navlist li:hover ul#subnavlist li a
-  {
-  display: block;
-  width: 20em;
-  border: none;
-  padding: 2px;
+    ul#navlist li:hover ul#subnavlist
+    {
+      display: block;
+      position: absolute;
+      font-size: 9pt;
+      padding-top: 1px;
 
-  }
+    }
 
-  ul#navlist li:hover ul#subnavlist li a:before {  }
+    ul#navlist li:hover ul#subnavlist li a
+    {
+      display: block;
+      width: 20em;
+      border: none;
+      padding: 0px;
+
+    }
+
+    ul#navlist li:hover ul#subnavlist li a:before {  }
+
 
 
 /* PRACTICE AREAS */
@@ -235,7 +242,7 @@ nav {
 }
 
 .spacer {
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 
@@ -255,7 +262,7 @@ header ul {
 header li {
   display: inline;
   float: left;
-  padding: 0 10pt;
+  padding: 0 3pt;
 
 }
 
@@ -316,10 +323,11 @@ h3 {
   .quote {
     padding: 0 10px; 
   }
+
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 768px) {
     .quote {
       padding: 0 100px; }
     .body-text { 
@@ -339,4 +347,83 @@ h3 {
     .disclaimer {
       font-size: 1em;
     }
+    header li {
+      display: inline;
+      float: left;
+      padding: 0 10pt;
+    }
+    ul#navlist { 
+      width: auto;
+    }
+
+    ul#navlist a
+    {
+      text-decoration: none;
+      margin: 0 20pt;
+    }
+
+    ul#navlist, ul#navlist ul, ul#navlist li
+    {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+    }
+
+    ul#navlist li { float: left; }
+
+    ul#navlist li a
+    {
+      padding: 3px;
+    }
+
+    ul#navlist li a:after {
+      
+    }
+
+    ul#navlist li a:last:after {
+      content: '';
+    }
+
+    ul#navlist li a:hover
+    {
+      text-decoration: underline;
+      color: #EEE;
+    }
+
+    ul#navlist li a:active
+    {
+      color: #EEE;
+    }
+
+    ul#subnavlist { display: none; background-color: #15161f;  }
+    ul#subnavlist li { float: none;  }
+
+    ul#subnavlist li a
+    {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1.5em;
+
+    }
+
+    ul#navlist li:hover ul#subnavlist
+    {
+      display: block;
+      position: absolute;
+      font-size: 9pt;
+      padding-top: 5px;
+
+    }
+
+    ul#navlist li:hover ul#subnavlist li a
+    {
+      display: block;
+      width: 20em;
+      border: none;
+      padding: 2px;
+
+    }
+
+    ul#navlist li:hover ul#subnavlist li a:before {  }
+  }
 
