@@ -10,8 +10,19 @@
 
 @font-face {
   font-family: FarnhamDisplay-RegularItal;
-  src: url(../fonts/FarnhamText-RegularItalic.otf);
+  src: url(../fonts/farnham/FarnhamText-RegularItalic.otf);
 }
+
+@font-face {
+  font-family: FarnhamText-SeimiSC;
+  src: url(../fonts/farnham/FarnhamText-SemiboldSC.otf);
+}
+
+@font-face {
+  font-family: FarnhamText-Regular;
+  src: url(../fonts/farnham/FarnhamText-RegularSC.otf);
+}
+
 
 html.homepage { 
   background: url(../images/bg.jpg) no-repeat center center fixed; 
@@ -88,9 +99,9 @@ h2 img {
   blockquote {
     border-top: 1px solid #ccc; 
     border-bottom: 1px solid #ccc; 
-    width: 50%;
-    padding: 30px 0;
-    line-height: 3em;
+    width: 80%;
+    padding: 20px 0;
+    line-height: 2em;
     margin-top: 0;
   }
 
@@ -111,15 +122,64 @@ h2 img {
     vertical-align: middle;
   }
 
- img.fbshare {
-  margin-left: 20px;
-  position: relative; 
-  top: 15px;
-  
-
+  img.fbshare {
+    margin-left: 20px;
+    position: relative; 
+    top: 15px;
   }
 
 
+
+
+
+/* PRACTICE AREAS */
+
+html.practice { 
+  background: url(../images/bg-practice.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+.practice {
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+
+h3 {
+  text-align: center;
+  font-family: "FarnhamText-SeimiSC";
+  font-size: 30pt;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 8pt;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+.body-text {
+  text-align: justify;
+  font-family: "FarnhamText-Regular";
+  font-size: .8em;
+  padding: 5pt;
+}
+
+.author {
+  font-size: .8em;
+}
+
+
+.disclaimer {
+  font-family: "FarnhamDisplay-RegularItal";
+  background-color: rgba(103, 162, 185, .5);
+  padding: 35pt;
+  text-align: justify;
+  letter-spacing: .3pt;
+  font-size: .8em;
+
+}
 
   /* Larger than mobile */
 @media (min-width: 410px) {
@@ -139,35 +199,22 @@ h2 img {
 /* Larger than tablet */
 @media (min-width: 750px) {
     .quote {
-    padding: 0 100px; 
-  }
+      padding: 0 100px; }
+    .body-text { 
+      font-size: 1em; }
+    .practice {
+      padding: 35pt;
+    }
+    .author {
+      margin-left: 80px;
+      font-size: 1.3em;
+    }
+    blockquote {
+      width: 50%;
+      padding: 30px 0;
+      line-height: 3em;
+    }
+    .disclaimer {
+      font-size: 1em;
+    }
 
-}
-
-
-/* PRACTICE AREAS */
-
-html.practice { 
-  background: url(../images/bg-practice.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- 
-}
-
-
-
-h3 {
-  text-align: center;
-}
-
-.body-text {
-
-  text-align: justify;
-}
-
-.author {
-  margin-left: 80px;
-  font-size: 1.3em;
-}
