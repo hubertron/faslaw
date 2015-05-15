@@ -132,7 +132,7 @@ h2 img {
   }
 
 
-/* TOOLTIPS */
+/* Navigation */
   ul#navlist { 
     width: 100%;
 
@@ -201,7 +201,7 @@ h2 img {
     ul#navlist li:hover ul#subnavlist li a
     {
       display: block;
-      width: 20em;
+      width: 15em;
       border: none;
       padding: 0px;
 
@@ -276,11 +276,12 @@ header li {
 h3 {
   text-align: center;
   font-family: "FarnhamText-SeimiSC";
-  font-size: 30pt;
+  font-size: 16pt;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 8pt;
   text-transform: uppercase;
   color: #eee;
+  padding-top: 20px;
 }
 
 .body-text {
@@ -324,6 +325,7 @@ h3 {
     padding: 0 10px; 
   }
 
+
 }
 
 /* Larger than tablet */
@@ -338,6 +340,10 @@ h3 {
     .author {
       margin-left: 80px;
       font-size: 1.3em;
+    }
+
+    h3 {
+      font-size: 30pt;
     }
     blockquote {
       width: 50%;
@@ -418,12 +424,16 @@ h3 {
     ul#navlist li:hover ul#subnavlist li a
     {
       display: block;
-      width: 20em;
+      width: 15em;
       border: none;
       padding: 2px;
 
     }
 
     ul#navlist li:hover ul#subnavlist li a:before {  }
+
+    ul#navlist li:first-child {
+      padding-left: 0px;
+    } 
   }
 
