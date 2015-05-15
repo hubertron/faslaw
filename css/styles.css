@@ -433,8 +433,11 @@ a.no-dec {
     .body-text { 
       font-size: 1em;
       padding: 0 30px; }
-    .practice {
-      padding: 35pt 0;
+    html {
+      padding-top: 35pt;
+    }
+    div.practice {
+      padding-top: 30pt;
     }
     .author {
       margin-left: 80px;
