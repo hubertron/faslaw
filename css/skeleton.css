@@ -28,6 +28,10 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+  border:5px solid rgba(103, 162, 185, .5)
+}
+
 .container {
   position: relative;
   width: 100%;
