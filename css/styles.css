@@ -20,8 +20,14 @@
 
 @font-face {
   font-family: FarnhamText-Regular;
+  src: url(../fonts/farnham/FarnhamText-Regular.otf);
+}
+
+@font-face {
+  font-family: FarnhamText-RegularSC;
   src: url(../fonts/farnham/FarnhamText-RegularSC.otf);
 }
+
 
 
 html.homepage { 
@@ -309,6 +315,23 @@ h3 {
 
 
 
+/* Lawyer Specfic Styles */
+
+
+h4 {
+  color: #67a2b9;
+  font-family: "FarnhamText-RegularSC"; 
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.hero-photo {
+  width: 223px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
 
 
   /* Larger than mobile */
@@ -343,7 +366,7 @@ h3 {
     }
 
     h3 {
-      font-size: 30pt;
+      font-size: 25pt;
     }
     blockquote {
       width: 50%;
