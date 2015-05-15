@@ -431,7 +431,8 @@ a.no-dec {
     .quote {
       padding: 0 100px; }
     .body-text { 
-      font-size: 1em; }
+      font-size: 1em;
+      padding: 0 30px; }
     .practice {
       padding: 35pt 0;
     }
