@@ -66,6 +66,10 @@ hr {
 }
 
 h2 img {
+  width: 90%;
+}
+
+h2 img {
   display: block;
   margin-left: auto;
   margin-right: auto; 
@@ -135,12 +139,14 @@ h2 img {
     margin-left: 20px;
     position: relative; 
     top: 15px;
+    padding-left: 25px;
   }
 
 
 /* Navigation */
   ul#navlist { 
     width: 100%;
+    background-color: #15161f;
 
   }
 
@@ -148,14 +154,14 @@ h2 img {
     {
       margin: 0px;
       padding-top: 4px; 
-      background-color: #15161f;
       list-style-type: none;
+      padding-bottom: 4px;
     }
 
     ul#navlist li { float: left;   }
 
     ul#navlist li:first-child {
-      padding-left: 25px;
+      
     } 
 
     ul#navlist li a
@@ -284,17 +290,18 @@ h3 {
   font-family: "FarnhamText-SeimiSC";
   font-size: 16pt;
   text-shadow: 1px 1px 2px #000;
-  letter-spacing: 8pt;
+  letter-spacing: 3pt;
   text-transform: uppercase;
   color: #eee;
   padding-top: 20px;
 }
 
 .body-text {
-  text-align: justify;
+  text-align: left;
   font-family: "FarnhamText-Regular";
   font-size: .8em;
   padding: 5pt;
+  line-height: 1.1em;
 }
 
 .author {
@@ -381,7 +388,7 @@ html.contact {
   color: #ddd;
   font-family: "FarnhamText-Regular";
   text-align: center;
-  font-size: 1.3em;
+  font-size: .8em;
   letter-spacing: .08em;
 }
 
@@ -423,6 +430,15 @@ a.no-dec {
     padding: 0 10px; 
   }
 
+  h2 img {
+  width: auto;
+}
+  .map {
+     font-size: 1.3em;
+  }
+
+
+
 
 }
 
@@ -432,7 +448,8 @@ a.no-dec {
       padding: 0 100px; }
     .body-text { 
       font-size: 1em;
-      padding: 0 30px; }
+      padding: 0 30px;
+      line-height: 1.6em; }
     html {
       padding-top: 35pt;
     }
@@ -446,6 +463,7 @@ a.no-dec {
 
     h3 {
       font-size: 25pt;
+      letter-spacing: 8pt;
     }
     blockquote {
       width: 50%;
@@ -462,6 +480,7 @@ a.no-dec {
     }
     ul#navlist { 
       width: auto;
+
     }
 
     ul#navlist a
