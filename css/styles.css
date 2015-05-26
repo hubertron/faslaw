@@ -416,6 +416,11 @@ a.no-dec {
   color: #ddd;
 }
 
+.hide {
+  visibility: hidden;
+}
+
+
   /* Larger than mobile */
 @media (min-width: 410px) {
   footer {
