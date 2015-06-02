@@ -278,6 +278,15 @@ header li {
 
 }
 
+.hidden-nav {
+  display: none;
+}
+
+i.hidden-nav:hover {
+  display: visible;
+}
+
+
 
 .practice {
   background-color: rgba(0, 0, 0, 0.5); 
