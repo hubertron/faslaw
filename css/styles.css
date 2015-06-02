@@ -91,6 +91,8 @@ h2 img {
 
   }
 
+
+
   .quote, blockquote {
     color: #ccc;
     display: block;
@@ -278,13 +280,6 @@ header li {
 
 }
 
-.hidden-nav {
-  display: none;
-}
-
-i.hidden-nav:hover {
-  display: visible;
-}
 
 
 
@@ -570,5 +565,85 @@ a.no-dec {
     ul#navlist li:first-child {
       padding-left: 0px;
     } 
+
+    ------
+
+    ul#home-navlist a
+    {
+      text-decoration: none;
+      margin: 0 20pt;
+    }
+
+    ul#home-navlist, ul#home-navlist ul, ul#home-navlist li
+    {
+      margin: 0 20px;
+      padding: 0px;
+      list-style-type: none;
+    }
+
+
+    ul#home-navlist li a
+    {
+      padding: 30px;
+      text-decoration: none;
+    }
+
+    ul#home-navlist li a:after {
+      
+    }
+
+    ul#home-navlist li a:last:after {
+      content: '';
+    }
+
+    ul#home-navlist li a:hover
+    {
+      text-decoration: underline;
+      color: #EEE;
+    }
+
+    ul#home-navlist li a:active
+    {
+      color: #EEE;
+    }
+
+    ul#home-subnavlist { display: none; background-color: #15161f;  }
+    ul#home-subnavlist li { float: none;  }
+
+    ul#home-subnavlist li a
+    {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist
+    {
+      display: block;
+      position: absolute;
+      font-size: 9pt;
+      padding-top: 5px;
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist li a
+    {
+      display: block;
+      width: 15em;
+      border: none;
+      padding: 2px;
+      font-size: 8pt;
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist li a:before {  }
+
+    ul#home-navlist li:first-child {
+      padding-left: 0px;
+    } 
+
   }
+
 
