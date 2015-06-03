@@ -566,7 +566,7 @@ a.no-dec {
       padding-left: 0px;
     } 
 
-    ------
+/* Home Nav Styles */
 
     ul#home-navlist a
     {
@@ -599,15 +599,17 @@ a.no-dec {
     ul#home-navlist li a:hover
     {
       text-decoration: underline;
-      color: #EEE;
+      color: #222;
     }
 
     ul#home-navlist li a:active
     {
-      color: #EEE;
+      color: #222;
     }
 
-    ul#home-subnavlist { display: none; background-color: #15161f;  }
+
+
+    ul#home-subnavlist { display: none; background-color: rgba(21, 22, 31, 0.8);  }
     ul#home-subnavlist li { float: none;  }
 
     ul#home-subnavlist li a
@@ -625,16 +627,20 @@ a.no-dec {
       position: absolute;
       font-size: 9pt;
       padding-top: 5px;
+      margin-top: -124px;
+      height: 81px;
+      margin-left: 0px;
+
 
     }
 
     ul#home-navlist li:hover ul#home-subnavlist li a
     {
       display: block;
-      width: 15em;
       border: none;
       padding: 2px;
       font-size: 8pt;
+      color: #fff;
 
     }
 
