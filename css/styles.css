@@ -91,6 +91,8 @@ h2 img {
 
   }
 
+
+
   .quote, blockquote {
     color: #ccc;
     display: block;
@@ -279,6 +281,8 @@ header li {
 }
 
 
+
+
 .practice {
   background-color: rgba(0, 0, 0, 0.5); 
 }
@@ -419,6 +423,104 @@ a.no-dec {
 .hide {
   visibility: hidden;
 }
+
+/* Home Nav Styles */
+
+
+    ul#home-navlist a
+    {
+      text-decoration: none;
+      margin: 0 20pt;
+    }
+
+    ul#home-navlist, ul#home-navlist ul, ul#home-navlist li
+    {
+      margin: 10px 20px;
+      padding: 0px;
+      list-style-type: none;
+    }
+
+
+    ul#home-navlist li a
+    {
+      padding: 30px;
+      text-decoration: none;
+    }
+
+    ul#home-navlist li a:after {
+      
+    }
+
+    ul#home-navlist li a:last:after {
+      content: '';
+    }
+
+    ul#home-navlist li a:hover
+    {
+      text-decoration: underline;
+      color: #222;
+    }
+
+    ul#home-navlist li a:active
+    {
+      color: #222;
+    }
+
+
+
+    ul#home-subnavlist { display: none; background-color: rgba(21, 22, 31, 1);  }
+    ul#home-subnavlist li { float: left;  }
+
+    ul#home-subnavlist li a
+    {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+
+ 
+    ul#home-navlist li:hover ul#home-subnavlist
+    {
+      display: block;
+      position: absolute;
+      font-size: 9pt;
+      padding-top: 5px;
+      margin-top: -86px;
+      margin-left: -10px;
+      z-index: 1000000;
+
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist li a
+    {
+      display: block;
+      border: none;
+      padding: 2px;
+      font-size: 8pt;
+      color: #fff;
+      height: 100%;
+
+    }
+
+
+
+    ul#home-navlist li:first-child {
+      padding-left: 0px;
+    } 
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
 
 
   /* Larger than mobile */
@@ -561,5 +663,91 @@ a.no-dec {
     ul#navlist li:first-child {
       padding-left: 0px;
     } 
+
+/* Home Nav Styles */
+
+    ul#home-navlist a
+    {
+      text-decoration: none;
+      margin: 0 20pt;
+    }
+
+    ul#home-navlist, ul#home-navlist ul, ul#home-navlist li
+    {
+      margin: 0 20px;
+      padding: 0px;
+      list-style-type: none;
+    }
+
+
+    ul#home-navlist li a
+    {
+      padding: 30px;
+      text-decoration: none;
+    }
+
+    ul#home-navlist li a:after {
+      
+    }
+
+    ul#home-navlist li a:last:after {
+      content: '';
+    }
+
+    ul#home-navlist li a:hover
+    {
+      text-decoration: underline;
+      color: #222;
+    }
+
+    ul#home-navlist li a:active
+    {
+      color: #222;
+    }
+
+
+
+    ul#home-subnavlist { display: none; background-color: rgba(21, 22, 31, 0.8);  }
+    ul#home-subnavlist li { float: none;  }
+
+    ul#home-subnavlist li a
+    {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist
+    {
+      display: block;
+      position: absolute;
+      font-size: 9pt;
+      padding-top: 5px;
+      margin-top: -124px;
+      height: 81px;
+      margin-left: 0px;
+
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist li a
+    {
+      display: block;
+      border: none;
+      padding: 2px;
+      font-size: 8pt;
+      color: #fff;
+
+    }
+
+    ul#home-navlist li:hover ul#home-subnavlist li a:before {  }
+
+    ul#home-navlist li:first-child {
+      padding-left: 0px;
+    } 
+
   }
+
 
