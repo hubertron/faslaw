@@ -76,20 +76,7 @@ h2 img {
   margin-top: 25%;
   }
 
-.button {
-    font-family: "DINProLight";
-    color: #ccc;
-    margin: 20px 20px;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2 ease-in-out, color 0.2s ease-in-out;
-  }
 
-  .button:hover {
-    background-color: #fff;
-
-  }
 
 
 
@@ -424,94 +411,39 @@ a.no-dec {
   visibility: hidden;
 }
 
-/* Home Nav Styles */
+/* Home Nav Styles Mobile */
 
-
-    ul#home-navlist a
-    {
-      text-decoration: none;
-      margin: 0 20pt;
-    }
-
-    ul#home-navlist, ul#home-navlist ul, ul#home-navlist li
-    {
-      margin: 10px 20px;
-      padding: 0px;
+    #home-navlist {
       list-style-type: none;
+      text-align: center;
+      font-family: "DINProLight";
+      font-weight: bold;
     }
 
-
-    ul#home-navlist li a
-    {
-      padding: 30px;
+    #home-navlist a {
       text-decoration: none;
+      font-size: 1.3em;
     }
 
-    ul#home-navlist li a:after {
-      
+    #home-navlist li {
+      line-height: 1em;
     }
 
-    ul#home-navlist li a:last:after {
-      content: '';
-    }
-
-    ul#home-navlist li a:hover
-    {
-      text-decoration: underline;
-      color: #222;
-    }
-
-    ul#home-navlist li a:active
-    {
-      color: #222;
-    }
-
-
-
-    ul#home-subnavlist { display: none; background-color: rgba(21, 22, 31, 1);  }
-    ul#home-subnavlist li { float: left;  }
-
-    ul#home-subnavlist li a
-    {
-      padding: 0px;
-      margin: 0px;
-      line-height: 1.5em;
-      text-align: left;
-
-    }
-
+    #home-subnavlist {
+      list-style-type: none;
  
-    ul#home-navlist li:hover ul#home-subnavlist
-    {
-      display: block;
-      position: absolute;
-      font-size: 9pt;
-      padding-top: 5px;
-      margin-top: -86px;
-      margin-left: -10px;
-      z-index: 1000000;
-
-
     }
 
-    ul#home-navlist li:hover ul#home-subnavlist li a
-    {
-      display: block;
-      border: none;
-      padding: 2px;
-      font-size: 8pt;
-      color: #fff;
-      height: 100%;
-
+     #home-subnavlist li {
+      text-indent: -40px;
+      font-size: .7em; 
     }
 
+    #home-subnavlist a {
+      text-decoration: underline;
+    }
 
-
-    ul#home-navlist li:first-child {
-      padding-left: 0px;
-    } 
-
-
+    
 
 
 
@@ -670,6 +602,7 @@ a.no-dec {
     {
       text-decoration: none;
       margin: 0 20pt;
+      font-size: 1em;
     }
 
     ul#home-navlist, ul#home-navlist ul, ul#home-navlist li
@@ -679,11 +612,16 @@ a.no-dec {
       list-style-type: none;
     }
 
+    #home-navlist li {
+      line-height: 3.5em;
+    }
+
 
     ul#home-navlist li a
     {
       padding: 30px;
       text-decoration: none;
+
     }
 
     ul#home-navlist li a:after {
@@ -708,7 +646,9 @@ a.no-dec {
 
 
     ul#home-subnavlist { display: none; background-color: rgba(21, 22, 31, 0.8);  }
-    ul#home-subnavlist li { float: none;  }
+    ul#home-subnavlist li { float: none; text-indent: 0px;  }
+
+
 
     ul#home-subnavlist li a
     {
@@ -747,6 +687,21 @@ a.no-dec {
     ul#home-navlist li:first-child {
       padding-left: 0px;
     } 
+
+    .button {
+    font-family: "DINProLight";
+    color: #ccc;
+    margin: 0px 20px;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2 ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #fff;
+
+    }
 
   }
 
