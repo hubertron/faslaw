@@ -270,7 +270,7 @@ header li {
 
 
 .practice {
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.7); 
 }
 
 
@@ -291,7 +291,8 @@ h3 {
   font-family: "FarnhamText-Regular";
   font-size: .9em;
   padding: 10pt;
-  line-height: 1.2em;
+  line-height: 1.5em;
+  letter-spacing: .03em;
 }
 
 .author {
@@ -487,7 +488,8 @@ a.no-dec {
     .body-text { 
       font-size: 1em;
       padding: 0 30px;
-      line-height: 1.6em; }
+      line-height: 1.6em;
+      letter-spacing: .03em; }
     html {
       padding-top: 35pt;
     }
