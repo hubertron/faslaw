@@ -1,0 +1,14 @@
+_site
+s3_website.yml
+_drafts/
+.DS_Store
+*.swp
+_jekyll_s3.yml
+upload.py
+Gemfile.lock
+.sass-cache/
+*.swp
+*.scssc
+.rvmrc
+*.psd
+*~
