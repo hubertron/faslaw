@@ -413,11 +413,14 @@ a.no-dec {
 
 /* Home Nav Styles Mobile */
 
+    ul#home-navlist {
+      padding-top: 40px;
+    }
+
     #home-navlist {
       list-style-type: none;
       text-align: center;
-      font-family: "DINProLight";
-      font-weight: bold;
+      
     }
 
     #home-navlist a {
@@ -427,6 +430,9 @@ a.no-dec {
 
     #home-navlist li {
       line-height: 1em;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: bolder;
     }
 
     #home-subnavlist {
@@ -437,6 +443,7 @@ a.no-dec {
      #home-subnavlist li {
       text-indent: -40px;
       font-size: .7em; 
+      font-family: "DINProLight";
     }
 
     #home-subnavlist a {
