@@ -483,6 +483,9 @@ a.no-dec {
      font-size: 1.3em;
   }
 
+li.button {
+  padding-bottom: 80px;
+}
 
 
 
@@ -704,6 +707,8 @@ a.no-dec {
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2 ease-in-out, color 0.2s ease-in-out;
+    width: 200px;
+
     }
 
     .button:hover {
