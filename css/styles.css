@@ -496,7 +496,7 @@ li.button {
     .quote {
       padding: 0 100px; }
     .body-text { 
-      font-size: 1em;
+      font-size: 1.1em;
       padding: 0 30px;
       line-height: 1.6em;
       letter-spacing: .03em; }
@@ -505,6 +505,7 @@ li.button {
     }
     div.practice {
       padding-top: 30pt;
+      padding-bottom: 30pt;
     }
     .author {
       margin-left: 80px;
